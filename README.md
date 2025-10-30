@@ -1,4 +1,5 @@
 # Hollow
+<img width="1512" height="904" alt="Screenshot 2025-10-30 at 9 08 07 PM" src="https://github.com/user-attachments/assets/7eb6ca9a-6fb2-4329-afac-5535e231589f" />
 
 A modern web application built with React and Vite.
 
