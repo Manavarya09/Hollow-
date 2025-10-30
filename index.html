@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕳️</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOLLOW</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      :root, [data-theme='paper'] {
+        --color-background: #F1F1F1;
+        --color-text-primary: #1A1A1A;
+        --color-text-secondary: #555555;
+        --color-border: #E0E0E0;
+        --color-accent-bg: #1A1A1A;
+        --color-accent-text: #F1F1F1;
+        --color-background-hover: #FAFAFA;
+        --color-card-shadow: rgba(0, 0, 0, 0.07);
+        --d3-tooltip-bg: #000;
+        --d3-tooltip-text: #fff;
+      }
+      [data-theme='dark'] {
+        --color-background: #121212;
+        --color-text-primary: #F1F1F1;
+        --color-text-secondary: #AAAAAA;
+        --color-border: #333333;
+        --color-accent-bg: #F1F1F1;
+        --color-accent-text: #1A1A1A;
+        --color-background-hover: #1f1f1f;
+        --color-card-shadow: rgba(255, 255, 255, 0.07);
+        --d3-tooltip-bg: #fff;
+        --d3-tooltip-text: #000;
+      }
+      [data-theme='sepia'] {
+        --color-background: #f4e8d5;
+        --color-text-primary: #5b4636;
+        --color-text-secondary: #8d6e63;
+        --color-border: #d7ccc8;
+        --color-accent-bg: #5b4636;
+        --color-accent-text: #f4e8d5;
+        --color-background-hover: #efebe9;
+        --color-card-shadow: rgba(91, 70, 54, 0.1);
+        --d3-tooltip-bg: #5b4636;
+        --d3-tooltip-text: #f4e8d5;
+      }
+      .d3-tooltip {
+        background-color: var(--d3-tooltip-bg);
+        color: var(--d3-tooltip-text);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'serif': ['Georgia', 'serif'],
+              'sans': ['Inter', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "d3": "https://aistudiocdn.com/d3@^7.9.0",
+    "d3-shape": "https://aistudiocdn.com/d3-shape@^3.2.0",
+    "d3-array": "https://aistudiocdn.com/d3-array@^3.2.4",
+    "d3-scale": "https://aistudiocdn.com/d3-scale@^4.0.2",
+    "d3-selection": "https://aistudiocdn.com/d3-selection@^3.0.0",
+    "d3-axis": "https://aistudiocdn.com/d3-axis@^3.0.0",
+    "d3-force": "https://aistudiocdn.com/d3-force@^3.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-[var(--color-text-primary)] font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
