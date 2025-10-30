@@ -1,20 +1,50 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Hollow
 
-# Run and deploy your AI Studio app
+A modern web application built with React and Vite.
 
-This contains everything you need to run your app locally.
+## Features
+- Cluster map visualization
+- Collective report dashboard
+- Personal dashboard
+- Sentiment analysis chart
+- Theme switcher (light/dark)
+- Post creation and management
+- Gemini AI service integration
 
-View your app in AI Studio: https://ai.studio/apps/drive/1eKT9_aF17syHSASQ5wkfuG-Q8ggYq6pM
+## Getting Started
 
-## Run Locally
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-**Prerequisites:**  Node.js
+### Installation
+```bash
+npm install
+```
 
+### Running the App
+```bash
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Project Structure
+```
+components/         # Reusable React components
+hooks/              # Custom React hooks
+services/           # API and service logic
+App.tsx             # Main app component
+index.tsx           # Entry point
+constants.ts        # App-wide constants
+types.ts            # TypeScript types
+vite.config.ts      # Vite configuration
+```
+
+## Scripts
+- `npm run dev` — Start development server
+- `npm run build` — Build for production
+- `npm run preview` — Preview production build
+
+## License
+MIT
